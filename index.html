@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IA Ética y Humanista | Basado en la Recomendación de la UNESCO</title>
+  
+  <!-- Metadatos para compartir en Redes Sociales (WhatsApp, Facebook, Twitter, LinkedIn) -->
+  <meta name="description" content="Explora los principios éticos de la Inteligencia Artificial según la UNESCO y desafía tus decisiones en nuestro simulador y mini-juego interactivo.">
+  <meta property="og:title" content="IA Ética: El Futuro Humano y la UNESCO">
+  <meta property="og:description" content="Descubre cómo la UNESCO guía el desarrollo de la IA para proteger los derechos humanos y juega al simulador ético interactivo.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1200&auto=format&fit=crop">
+  <meta name="theme-color" content="#0077D4">
+
+  <!-- Fuentes de Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Barra de Navegación -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo-link">
+        <div class="unesco-pill">UNESCO</div>
+        <span class="logo-text">Ética <strong>IA</strong></span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#inicio" class="nav-link active">Inicio</a>
+        <a href="#valores" class="nav-link">Valores Clave</a>
+        <a href="#principios" class="nav-link">10 Principios</a>
+        <a href="#juego" class="nav-link highlight-link">
+          <span class="nav-badge">Nuevo</span> Mini-Juego
+        </a>
+        <a href="#recursos" class="nav-link">Recursos</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="btnShareNav" class="btn-primary-sm" title="Compartir esta página con tus amigos">
+          <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="18" cy="5" r="3"></circle>
+            <circle cx="6" cy="12" r="3"></circle>
+            <circle cx="18" cy="19" r="3"></circle>
+            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+          </svg>
+          <span>Compartir</span>
+        </button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECCIÓN HERO -->
+  <section class="hero-section" id="inicio">
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="container hero-content">
+      <div class="hero-tag">
+        <span class="pulse-dot"></span>
+        Basado en la Recomendación Histórica de 193 Estados Miembros
+      </div>
+      
+      <h1 class="hero-title">
+        Inteligencia Artificial al Servicio de la <span class="gradient-text">Humanidad</span>
+      </h1>
+      
+      <p class="hero-description">
+        En noviembre de 2021, la <strong>UNESCO</strong> adoptó el primer marco normativo mundial sobre la ética de la inteligencia artificial. La IA no debe ser solo rápida ni rentable: debe proteger los derechos humanos, la diversidad cultural y nuestro planeta.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="#juego" class="btn-main pulse-btn">
+          <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+          Jugar: "Consejero Ético UNESCO"
+        </a>
+        <a href="#principios" class="btn-secondary">
+          Descubrir los 10 Principios
+        </a>
+      </div>
+
+      <!-- Métricas rápidas de impacto -->
+      <div class="hero-stats">
+        <div class="stat-card">
+          <span class="stat-number">193</span>
+          <span class="stat-label">Países adoptaron el acuerdo ético de UNESCO</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">4</span>
+          <span class="stat-label">Valores humanos fundamentales irrenunciables</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">10</span>
+          <span class="stat-label">Principios rectores para algoritmos justos</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN: ¿POR QUÉ LA UNESCO? Y VALORES FUNDAMENTALES -->
+  <section class="section values-section" id="valores">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Marco Normativo Global</span>
+        <h2 class="section-title">Los 4 Valores Fundamentales</h2>
+        <p class="section-subtitle">
+          Según la Recomendación de la UNESCO, cualquier sistema de IA debe guiarse obligatoriamente por estos cuatro pilares para ser admisible en la sociedad.
+        </p>
+      </div>
+
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon-box blue-accent">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z"></path>
+              <path d="M12 8v4"></path>
+              <path d="M12 16h.01"></path>
+              <circle cx="12" cy="12" r="9"></circle>
+            </svg>
+          </div>
+          <h3>1. Derechos Humanos y Dignidad</h3>
+          <p>
+            Ningún algoritmo puede despojar a los individuos de su dignidad. La IA jamás debe usarse para vigilancia masiva injustificada ni para socavar libertades humanas reconocidas internacionalmente.
+          </p>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon-box green-accent">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+              <path d="M2 17l10 5 10-5"></path>
+              <path d="M2 12l10 5 10-5"></path>
+            </svg>
+          </div>
+          <h3>2. Prosperidad del Medio Ambiente</h3>
+          <p>
+            El entrenamiento y despliegue de modelos masivos consumen enormes volúmenes de agua y electricidad. La UNESCO exige evaluar y mitigar activamente la huella de carbono de la IA.
+          </p>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon-box purple-accent">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h3>3. Diversidad e Inclusión</h3>
+          <p>
+            La IA no debe representar únicamente las lenguas y visiones de potencias tecnológicas. Debe salvaguardar lenguas indígenas, cerrar brechas de género y representar a todas las etnias.
+          </p>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon-box amber-accent">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+          </div>
+          <h3>4. Sociedades Pacíficas y Justas</h3>
+          <p>
+            Prohibir el uso de IA que polarice deliberadamente, incite al odio o manipule procesos electorales. La tecnología debe fortalecer la cohesión social y la justicia ciudadana.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN: LOS 10 PRINCIPIOS ÉTICOS (INTERACTIVA) -->
+  <section class="section principles-section" id="principios">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Reglas Claras de Desarrollo</span>
+        <h2 class="section-title">Los 10 Principios Rectores de la UNESCO</h2>
+        <p class="section-subtitle">
+          Haz clic o posa el cursor sobre cada principio para conocer cómo deben aplicarse en el diseño real de algoritmos y tecnologías.
+        </p>
+      </div>
+
+      <div class="principles-grid" id="principlesGrid">
+        <!-- Tarjeta 1 -->
+        <div class="principle-card" data-index="1">
+          <div class="principle-number">01</div>
+          <div class="principle-header-inner">
+            <span class="p-icon">⚖️</span>
+            <h4>Proporcionalidad e Inocuidad</h4>
+          </div>
+          <p>El uso de la IA debe ser necesario, legítimo y no exceder lo imprescindible. Si un método tradicional menos invasivo logra el objetivo, debe preferirse ese.</p>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="principle-card" data-index="2">
+          <div class="principle-number">02</div>
+          <div class="principle-header-inner">
+            <span class="p-icon">🛡️</span>
+            <h4>Seguridad y Protección</h4>
+          </div>
+          <p>Los sistemas de IA deben ser resilientes contra manipulaciones, ciberataques y fugas no previstas a lo largo de todo su ciclo de vida.</p>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="principle-card" data-index="3">
+          <div class="principle-number">03</div>
+          <div class="principle-header-inner">
+            <span class="p-icon">🤝</span>
+            <h4>Equidad y No Discriminación</h4>
+          </div>
+          <p>Eliminación proactiva de sesgos raciales, de género, socioeconómicos y etarios en los datos de entrenamiento y las decisiones computarizadas.</p>
+        </div>
+
+        <!-- Tarjeta 4 -->
+        <div class="principle-card" data-index="4">
+          <div class="principle-number">04</div>
+          <div class="principle-header-inner">
+            <span class="p-icon">🌱</span>
+            <h4>Sostenibilidad</h4>
+          </div>
+          <p>Evaluación continua del impacto ecológico (consumo de energía, generación de basura electrónica y huella hídrica de los centros de datos).</p>
+        </div>
+
+        <!-- Tarjeta 5 -->
+        <div class="principle-card" data-index="5">
+          <div class="principle-number">05</div>
+          <div class="principle-header-inner">
+            <span class="p-icon">🔒</span>
+            <h4>Intimidad y Protección de Datos</h4>
+          </div>
+          <p>Consentimiento informado real, derecho al olvido y anonimización garantizada frente a prácticas extractivas de datos personales.</p>
+        </div>
+
+        <!-- Tarjeta 6 -->
+        <div class="principle-card" data-index="6">
+          <div class="principle-number">06</div>
+          <div class="principle-header-inner">
+            <span class="p-icon">👁️</span>
+            <h4>Supervisión Humana (Human-in-the-loop)</h4>
+          </div>
+          <p>El ser humano debe tener siempre la última palabra en decisiones críticas sobre vidas humanas, salud, sentencias judiciales o empleo.</p>
+        </div>
+
+        <!-- Tarjeta 7 -->
+        <div class="principle-card" data-index="7">
+          <div class="principle-number">07</div>
+          <div class="principle-header-inner">
+            <span class="p-icon">🔍</span>
+            <h4>Transparencia y Explicabilidad</h4>
+          </div>
+          <p>Rechazo al modelo de "caja negra". Cualquier persona afectada por un algoritmo tiene derecho a saber qué datos se usaron y por qué se decidió en su contra.</p>
+        </div>
+
+        <!-- Tarjeta 8 -->
+        <div class="principle-card" data-index="8">
+          <div class="principle-number">08</div>
+          <div class="principle-header-inner">
+            <span class="p-icon">📋</span>
+            <h4>Responsabilidad y Rendición de Cuentas</h4>
+          </div>
+          <p>Las empresas, programadores y entidades gubernamentales deben asumir responsabilidad legal y moral cuando un sistema cause daños a terceros.</p>
+        </div>
+
+        <!-- Tarjeta 9 -->
+        <div class="principle-card" data-index="9">
+          <div class="principle-number">09</div>
+          <div class="principle-header-inner">
+            <span class="p-icon">🎓</span>
+            <h4>Sensibilización y Educación</h4>
+          </div>
+          <p>Fomentar la alfabetización digital para que la ciudadanía comprenda los riesgos de la IA y no sea víctima de desinformación ni manipulación.</p>
+        </div>
+
+        <!-- Tarjeta 10 -->
+        <div class="principle-card" data-index="10">
+          <div class="principle-number">10</div>
+          <div class="principle-header-inner">
+            <span class="p-icon">🌐</span>
+            <h4>Gobernanza Multilateral</h4>
+          </div>
+          <p>Creación de comités de expertos, sociedad civil y gobiernos para legislar de manera ágil antes de que la tecnología genere daños irreversibles.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN DE IMPACTOS REALES: EDUCACIÓN, CULTURA, GÉNERO -->
+  <section class="section cases-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Ámbitos Clave de la UNESCO</span>
+        <h2 class="section-title">¿Dónde se vive este debate hoy?</h2>
+      </div>
+
+      <div class="focus-grid">
+        <div class="focus-box">
+          <div class="focus-icon">📚</div>
+          <h4>En las Aulas y la Educación</h4>
+          <p>
+            La UNESCO pide no reemplazar la relación docente-estudiante por herramientas automáticas y asegurar que la IA fortalezca el pensamiento crítico en vez del plagio ciego.
+          </p>
+        </div>
+
+        <div class="focus-box">
+          <div class="focus-icon">👩‍💻</div>
+          <h4>Cerrar la Brecha de Género</h4>
+          <p>
+            Apenas el 22% de los profesionales de IA en el mundo son mujeres. Los sesgos machistas en conjuntos de datos heredados se amplifican si no hay inclusión deliberada.
+          </p>
+        </div>
+
+        <div class="focus-box">
+          <div class="focus-icon">🎭</div>
+          <h4>Patrimonio Cultural y Lenguas</h4>
+          <p>
+            Más del 80% de los modelos de IA se entrenan en inglés. La UNESCO lidera esfuerzos para digitalizar e incluir lenguas indígenas y tradiciones locales en los modelos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- SECCIÓN MINI-JUEGO INTERACTIVO -->
+  <!-- ============================================== -->
+  <section class="section game-section" id="juego">
+    <div class="container">
+      
+      <div class="game-wrapper">
+        <div class="game-banner">
+          <div class="game-banner-info">
+            <span class="game-pill">🕹️ Mini-Juego de Rol Interactivo</span>
+            <h2 class="game-main-title">Consejero Ético: El Dilema de la IA</h2>
+            <p class="game-intro-text">
+              Has sido nombrado <strong>Delegado Especial de la UNESCO</strong>. Gobiernos y corporaciones te presentan casos reales para implementar Inteligencia Artificial. ¿Tomarás decisiones responsables o cederás ante la conveniencia rápida?
+            </p>
+          </div>
+          <div class="game-banner-action">
+            <button id="btnSoundToggle" class="btn-sound" title="Activar/Desactivar efectos de sonido">
+              <span id="soundIcon">🔊</span> Sonido
+            </button>
+          </div>
+        </div>
+
+        <!-- PANTALLA 1: INICIO DEL JUEGO -->
+        <div class="game-screen active" id="gameScreenStart">
+          <div class="game-hero-start">
+            <div class="mission-badge">Misión Oficial</div>
+            <h3>Tu desafío: Superar 5 Dilemas Críticos del Mundo Real</h3>
+            <p>
+              Tus decisiones afectarán tres indicadores fundamentales avalados por la UNESCO:
+            </p>
+            
+            <div class="indicators-preview">
+              <div class="ind-preview-item">
+                <span class="icon">⚖️</span>
+                <strong>Derechos Humanos</strong>
+                <small>Dignidad, privacidad y no discriminación</small>
+              </div>
+              <div class="ind-preview-item">
+                <span class="icon">🔍</span>
+                <strong>Transparencia</strong>
+                <small>Explicabilidad y rendición de cuentas</small>
+              </div>
+              <div class="ind-preview-item">
+                <span class="icon">🌱</span>
+                <strong>Sostenibilidad</strong>
+                <small>Impacto ecológico y respeto social</small>
+              </div>
+            </div>
+
+            <div class="start-actions">
+              <button id="btnStartGame" class="btn-main-large">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="icon-svg">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+                ¡Comenzar Mi Misión Como Consejero!
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PANTALLA 2: JUEGO EN CURSO -->
+        <div class="game-screen" id="gameScreenPlay">
+          <!-- Barra superior de estado -->
+          <div class="game-top-bar">
+            <div class="scenario-counter">
+              Caso <span id="currentScenarioNum">1</span> de <span id="totalScenariosNum">5</span>
+            </div>
+            
+            <div class="meters-bar">
+              <div class="meter-item">
+                <div class="meter-header">
+                  <span>⚖️ Derechos</span>
+                  <span id="scoreRightsVal">70%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill fill-rights" id="barRights" style="width: 70%"></div>
+                </div>
+              </div>
+
+              <div class="meter-item">
+                <div class="meter-header">
+                  <span>🔍 Transparencia</span>
+                  <span id="scoreTransparencyVal">70%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill fill-transparency" id="barTransparency" style="width: 70%"></div>
+                </div>
+              </div>
+
+              <div class="meter-item">
+                <div class="meter-header">
+                  <span>🌱 Sostenibilidad</span>
+                  <span id="scoreEcoVal">70%</span>
+                </div>
+                <div class="progress-track">
+                  <div class="progress-fill fill-eco" id="barEco" style="width: 70%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tarjeta del Dilema -->
+          <div class="dilemma-container">
+            <div class="dilemma-category" id="dilemmaCategory">Educación y Privacidad</div>
+            <h3 class="dilemma-title" id="dilemmaTitle">Título del caso</h3>
+            <p class="dilemma-story" id="dilemmaStory">Descripción del escenario...</p>
+            
+            <div class="dilemma-options" id="dilemmaOptions">
+              <!-- Botones de opciones generados por JS -->
+            </div>
+          </div>
+
+          <!-- Panel de Retroalimentación de la UNESCO (Aparece tras responder) -->
+          <div class="feedback-panel" id="feedbackPanel">
+            <div class="feedback-header">
+              <span class="feedback-icon" id="feedbackIcon">💡</span>
+              <div>
+                <h4 id="feedbackTitle">Evaluación del Dictamen</h4>
+                <span class="unesco-article-tag" id="feedbackArticle">Principio UNESCO aplicado</span>
+              </div>
+            </div>
+            <p class="feedback-text" id="feedbackText">Explicación detallada de por qué tu decisión es correcta o peligrosa...</p>
+            <div class="feedback-action">
+              <button id="btnNextScenario" class="btn-main">
+                Siguiente Dilema &rarr;
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PANTALLA 3: RESULTADOS Y CERTIFICADO -->
+        <div class="game-screen" id="gameScreenEnd">
+          <div class="results-card">
+            <div class="confetti-container" id="confettiContainer"></div>
+            
+            <div class="medal-badge" id="medalBadge">🏅</div>
+            <span class="result-badge-label" id="resultRank">Delegado Experto de la UNESCO</span>
+            <h3 class="result-title" id="resultTitle">¡Misión de Evaluación Completada!</h3>
+            
+            <p class="result-summary" id="resultSummary">
+              Has demostrado un notable compromiso con los principios éticos internacionales de la UNESCO.
+            </p>
+
+            <!-- Resumen de puntuaciones finales -->
+            <div class="final-stats-grid">
+              <div class="final-stat-box">
+                <span class="fs-icon">⚖️</span>
+                <span class="fs-num" id="finalRights">85%</span>
+                <span class="fs-label">Derechos Humanos</span>
+              </div>
+              <div class="final-stat-box">
+                <span class="fs-icon">🔍</span>
+                <span class="fs-num" id="finalTransparency">80%</span>
+                <span class="fs-label">Transparencia</span>
+              </div>
+              <div class="final-stat-box">
+                <span class="fs-icon">🌱</span>
+                <span class="fs-num" id="finalEco">90%</span>
+                <span class="fs-label">Sostenibilidad</span>
+              </div>
+            </div>
+
+            <!-- Caja con cita de reflexión -->
+            <div class="quote-box">
+              <p>
+                <em>"La tecnología no es neutra: refleja los valores y sesgos de quienes la crean. Poner la ética en el centro es garantizar el futuro de la humanidad."</em>
+              </p>
+              <span class="quote-author">— Marco Ético de la UNESCO</span>
+            </div>
+
+            <!-- Acciones del Final -->
+            <div class="results-actions">
+              <button id="btnShareResults" class="btn-share-results">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-svg">
+                  <circle cx="18" cy="5" r="3"></circle>
+                  <circle cx="6" cy="12" r="3"></circle>
+                  <circle cx="18" cy="19" r="3"></circle>
+                  <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                  <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                </svg>
+                Compartir Mi Puntuación con Amigos
+              </button>
+
+              <button id="btnRestartGame" class="btn-secondary">
+                🔄 Jugar Nuevamente
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- SECCIÓN: COMPARTIR CON OTROS -->
+  <!-- ============================================== -->
+  <section class="section share-section" id="compartir">
+    <div class="container">
+      <div class="share-card-banner">
+        <div class="share-info">
+          <span class="share-eyebrow">Difunde el Conocimiento</span>
+          <h2>¡Comparte esta experiencia con tus amigos, clases o colegas!</h2>
+          <p>
+            La alfabetización en Inteligencia Artificial y la defensa de los derechos humanos es responsabilidad de todos. Comparte esta web o desafía a otros a superar tu puntaje en el mini-juego.
+          </p>
+        </div>
+
+        <div class="share-buttons-container">
+          <button class="social-btn whatsapp-btn" id="btnShareWhatsApp">
+            <span>💬</span> WhatsApp
+          </button>
+          <button class="social-btn twitter-btn" id="btnShareTwitter">
+            <span>🐦</span> X (Twitter)
+          </button>
+          <button class="social-btn linkedin-btn" id="btnShareLinkedIn">
+            <span>💼</span> LinkedIn
+          </button>
+          <button class="social-btn copy-btn" id="btnCopyLink">
+            <span>🔗</span> Copiar Enlace
+          </button>
+          <button class="social-btn qr-btn" id="btnShowQR">
+            <span>📱</span> Código QR
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN: RECURSOS OFICIALES DE LA UNESCO -->
+  <section class="section resources-section" id="recursos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Documentación Oficial</span>
+        <h2 class="section-title">Aprende Más en la UNESCO</h2>
+        <p class="section-subtitle">
+          Accede a los instrumentos normativos, diagnósticos de preparación (RAM) y reportes globales oficiales.
+        </p>
+      </div>
+
+      <div class="resources-grid">
+        <a href="https://www.unesco.org/es/artificial-intelligence/recommendation-ethics" target="_blank" rel="noopener noreferrer" class="resource-card">
+          <div class="resource-badge">Documento Completo</div>
+          <h4>Recomendación sobre la Ética de la IA (2021)</h4>
+          <p>El texto oficial aprobado por aclamación por los 193 países que integran la conferencia general de la UNESCO.</p>
+          <span class="resource-link">Visitar UNESCO.org &rarr;</span>
+        </a>
+
+        <a href="https://www.unesco.org/es/artificial-intelligence/readiness-assessment-methodology" target="_blank" rel="noopener noreferrer" class="resource-card">
+          <div class="resource-badge">Herramienta de Diagnóstico</div>
+          <h4>Metodología de Evaluación de la Preparación (RAM)</h4>
+          <p>Marco práctico para que los países evalúen sus capacidades legislativas, institucionales y técnicas en IA.</p>
+          <span class="resource-link">Explorar RAM &rarr;</span>
+        </a>
+
+        <a href="https://www.unesco.org/es/artificial-intelligence/ethics-teachers-training" target="_blank" rel="noopener noreferrer" class="resource-card">
+          <div class="resource-badge">Educación y Docencia</div>
+          <h4>Capacitación en Ética de la IA para Docentes</h4>
+          <p>Guías pedagógicas para escuelas y universidades que buscan formar a las futuras generaciones de desarrolladores.</p>
+          <span class="resource-link">Ver Guías Didácticas &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL PARA CÓDIGO QR -->
+  <div class="modal-overlay" id="qrModal">
+    <div class="modal-box">
+      <button class="modal-close" id="btnCloseModal">&times;</button>
+      <div class="modal-content">
+        <h3>Escanea para abrir en tu celular</h3>
+        <p>Apunta la cámara de tu teléfono móvil a este código para jugar y explorar la página directamente:</p>
+        <div class="qr-code-placeholder" id="qrCanvasContainer">
+          <!-- Canvas de QR generado dinámicamente -->
+        </div>
+        <p class="qr-helper-text">¡Perfecto para compartir en exposiciones, clases o reuniones!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICACIÓN (Para avisar cuando se copie el enlace) -->
+  <div class="toast-notification" id="toastNotification">
+    <span class="toast-icon">✅</span>
+    <span class="toast-message" id="toastMessage">¡Enlace copiado al portapapeles!</span>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="unesco-pill">UNESCO</div>
+        <span>Iniciativa Ciudadana por una IA Ética, Inclusiva y Humanista</span>
+      </div>
+      <p class="footer-note">
+        Este portal ha sido creado como recurso pedagógico y divulgativo en sintonía con la <em>Recomendación sobre la Ética de la Inteligencia Artificial</em> de la UNESCO. Diseñado para ser compartido libremente.
+      </p>
+      <div class="footer-copy">
+        &copy; 2026 Plataforma Educativa de Ética en IA.
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
